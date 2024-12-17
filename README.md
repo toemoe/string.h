@@ -3,61 +3,15 @@
 Implementation of the string.h library with additions.
 
 ## Contents
-0. [Preamble](#preamble)
-1. [Chapter I](#chapter-i) \
-    1.1. [Introduction](#introduction)
-2. [Chapter II](#chapter-ii) \
+1. [Chapter I](#chapter-ii) \
     2.1. [Information](#information)
-3. [Chapter III](#chapter-iii) \
+2. [Chapter II](#chapter-iii) \
     3.1. [Part 1](#part-1-implementation-of-the-stringh-library-functions)  
     3.2. [Part 2](#part-2-partial-implementation-of-the-sprintf-function)  
     3.3. [Part 3](#part-3-bonus-implementation-of-some-format-modifiers-of-the-sprintf-function)  
-    3.4. [Part 4](#part-4-bonus-implementation-of-the-sscanf-function)  
-    3.5. [Part 5](#part-5-bonus-implementation-of-special-string-processing-functions)  
-
-
-## Preamble
-
-![s21_string+](misc/eng/images/s21_stringplus.png)
-
-1942, late evening, Bletchley Park, Alan Turing's desk. 
-
-For almost a year, a group of the brightest mathematicians, linguists, and crossword puzzle enthusiasts had been trying to solve the most difficult problem of all: breaking the German Enigma cipher, whose codes changed daily and whose number of possible combinations was about two to the power of 64. The group often had to come up with different algorithms, and they even developed a special set of keywords and their syntax for easy communication and logging, which is exactly like the well-known C language in our universe. What a remarkable coincidence! But there was a catch — the people at Bletchley Park had to remember the whole sequence of actions described in this language. 
-
-As you walk past Turing's desk, you notice a sheet of paper that says "For processing letters, punctuation marks, words and sentences". 
-
-*"What is this, Alan?"* you asked the thoughtful young man standing at the window.
-
-*"These are the functions that will make our lives easier! You know, cracking Enigma by brute force… I'd rather marry Joan than do that. So it seems we have to keep analysing texts, looking for patterns and coincidences. And so we're going to have to come up with different algorithms that are related to the processing of that very text and describe them. So we need a set of functions to help us do that. I'm working on them now."*
-
-*"And you are doing this using our new tool for representing unified algorithms?"*
-
-*"Yes, that is exactly what I am doing. Where else could we use these functions?"* Having said that, Turing looked at you as if you were an idiot. You noticed that and decided to show off your knowledge of the question: 
-
-*"You know I think we really need this. I just recently learnt this 'specific language of algorithm transfer'."*
-
-*"Seriously?"* Alan asked with some interest.
-
-*"Well, yes."*
-
-After a few seconds, Turing came to the logical conclusion of entrusting you with the job:
-
-*"Listen, do you want to do it yourself? Get some not-so-busy 
-and get on with it. And I'll continue to work on my mechanical code-breaking machine.*
-
-After thinking about it for a few seconds, you decide it's a great idea:
-
-*"Yes, I'll do everything in the best possible way!"*
-
+    3.4. [Part 4](#part-5-bonus-implementation-of-special-string-processing-functions)  
 
 ## Chapter I
-
-## Introduction
-
-In this project you will develop your own implementation of the string.h library in the C programming language with some additions (with your own implementation of the sprintf and sscanf functions). The string.h library is the main C library for string handling. As part of the project, you'll work on tasks involving string data and consolidate the structured approach.
-
-
-## Chapter II
 
 ## Information
 
@@ -99,7 +53,6 @@ The only support for strings in the actual programming language is that the comp
 
 ### sprintf and sscanf
 
-- int sscanf(const char *str, const char *format, ...) — reads formatted input from a string;
 - int sprintf(char *str, const char *format, ...) — sends formatted output to a string pointed to, by str.
 
 where:
@@ -169,7 +122,7 @@ where:
 | 4 | void *trim(const char *src, const char *trim_chars) | Returns a new string in which all leading and trailing occurrences of a set of specified characters (trim_chars) from the given string (src) are removed. In case of any error, return NULL. |
 
 
-## Chapter III
+## Chapter II
 
 ## Part 1. Implementation of the string.h library functions
 
@@ -216,15 +169,8 @@ Bonus assignment for extra points. You need to implement some format modifiers o
   - Precision description: .*
   - Length description: L
 
-## Part 4. Bonus. Implementation of the sscanf function
 
-Bonus assignment for extra points. You need to implement the sscanf function from the stdio.h library:
-- The function must be placed in the s21_string.h library.
-- All of the requirements outlined in [the first part](#part-1-implementation-of-the-stringh-library-functions) are applied to function implementation.
-- Full formatting (including flags, widths, modifiers and conversion types) must be supported.
-
-
-## Part 5. Bonus. Implementation of special string processing functions
+## Part 4. Bonus. Implementation of special string processing functions
 
 Bonus assignment for extra points. You need to implement some string processing functions from the String class (described [here](#special-string-processing-functions-from-the-string-class-in-c)):
 - The functions must be placed in the s21_string.h library.
